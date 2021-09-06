@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <img src="./img/Frame.svg" alt="logo" />
+      <div class="header__title">
+        <span>예술의 가치의 업 솔루션 <b>‘아트비’</b></span>
+      </div>
+    </header>
+    <div id="main">
+      <!-- banner -->
+      <div class="banner">
+        <img src="./img/brush_full-artwork.svg" alt="banner" />
+        <div class="subtitle">
+          <span>Art Blockchain Platform</span>
+          <span>문화 예술에 가치를 더하다, 아트비</span>
+        </div>
+      </div>
+      <!-- Title -->
+      <h1>홈페이지 업데이트 중</h1>
+      <p class="description">
+        아트비글로벌, 예술과 NFT을 <br />
+        융합해 새로운 패러다임를 제시하겠습니다. <br />
+        아트비 백서로 오픈전 미리 확인해 보세요!
+      </p>
+      <p class="description__desktop">
+        아트비글로벌, 예술과 NFT을 융합해 새로운 패러다임를 제시하겠습니다.
+        <br />
+        아트비 백서로 오픈전 미리 확인해 보세요!
+      </p>
+      <!-- ButtonGroup -->
+      <div class="button-group">
+        <button onclick="downloadPDF()">아트비 백서 보기</button>
+        <button onclick="redirect()">아트비 지갑 다운로드</button>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__frame">
+        <table>
+          <tr>
+            <td>대표자명</td>
+            <td>이건용</td>
+          </tr>
+
+          <tr>
+            <td>법인명</td>
+            <td>아트비글로벌(주)</td>
+          </tr>
+
+          <tr>
+            <td>전화상담</td>
+            <td>070-5577-9800</td>
+          </tr>
+
+          <tr>
+            <td>계좌</td>
+            <td>농협 301-0295-5774-31 아트비글로벌(주)</td>
+          </tr>
+
+          <tr>
+            <td>주소</td>
+            <td>서울특별시 송파구 백제고분로 24길 16, 101호 (삼전동)</td>
+          </tr>
+        </table>
+      </div>
+      <!-- desktop -->
+      <div class="footer__frame__desktop">
+        <div class="footer__logo">
+          <img src="./img/Group.svg" alt="footer-logo" />
+        </div>
+
+        <div class="footer__widget">
+          <ul>
+            <li>상담안내</li>
+            <li>전화상담 070-5577-9800</li>
+            <li>상담시간:오전 9시~ 오후 6시까지(평일)</li>
+          </ul>
+        </div>
+
+        <div class="footer__widget">
+          <ul>
+            <li>사업자 정보</li>
+            <li>법인명 : 아트비글로벌(주)</li>
+            <li>대표자명 : 이건용</li>
+          </ul>
+        </div>
+
+        <div class="footer__widget">
+          <ul>
+            <li>계좌 정보</li>
+            <li>계좌 : 농협 301-0295-5774-31</li>
+            <li>아트비글로벌(주)</li>
+          </ul>
+        </div>
+
+        <div class="footer__widget">
+          <ul>
+            <li>오시는 길</li>
+            <li>주소 : 서울특별시 송파구 백제고분로</li>
+            <li>24길 16, 101호 (삼전동)</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script>
+    function downloadPDF() {
+      var link = document.createElement("a");
+      link.href = "./아트비 백서.pdf";
+      link.download = "아트비 백서.pdf";
+      link.dispatchEvent(new MouseEvent("click"));
+    }
+
+    function redirect() {
+      window.open("https://www.google.com.vn/", "_blank");
+    }
+  </script>
+</html>
