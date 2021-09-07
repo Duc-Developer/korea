@@ -244,13 +244,16 @@ footer {
     height: 60px;
   }
 
+  footer {
+    padding: 40px 0;
+  }
+
   .footer__frame {
     display: none;
   }
 
   .footer__frame__desktop {
     display: flex;
-    height: 160px;
     padding: 0 60px;
     font-size: var(--small-font-size);
     color: var(--text-footer-color);
@@ -268,7 +271,7 @@ footer {
   }
 
   .footer__widget {
-    padding: 0 20px 0 0;
+    padding: 0 20px;
 
     border-left: 1px solid #656565;
   }
@@ -288,5 +291,6 @@ footer {
 
   .footer__widget ul {
     list-style-type: none;
+    padding: 0;
   }
 }
